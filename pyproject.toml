@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project]
+name = "qdrant-analysis"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "qdrant-client==1.13.3",
+    "h5py==3.11.0",
+    "numpy==1.26.4",
+    "pyyaml==6.0.2",
+    "rich==13.9.4",
+    "matplotlib==3.9.4",
+    "scipy==1.13.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

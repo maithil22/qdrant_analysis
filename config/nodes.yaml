@@ -1,0 +1,28 @@
+nodes:
+  - id: 0
+    host: 130.127.133.5
+    http_port: 6333
+    grpc_port: 6334
+    p2p_port: 6335
+    ssh_user: mmehta28
+  - id: 1
+    host: NODE1_IP         # fill in from CloudLab experiment page
+    http_port: 6333
+    grpc_port: 6334
+    p2p_port: 6335
+    ssh_user: mmehta28
+  - id: 2
+    host: NODE2_IP         # fill in from CloudLab experiment page
+    http_port: 6333
+    grpc_port: 6334
+    p2p_port: 6335
+    ssh_user: mmehta28
+
+collection:
+  name: sift128
+  vector_size: 128
+  distance: Euclid
+  hnsw_config:
+    m: 16
+    ef_construct: 100
+    full_scan_threshold: 10000
