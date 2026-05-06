@@ -1,5 +1,4 @@
 .venv/
-results/*/
 data/*.hdf5
 __pycache__/
 *.pyc

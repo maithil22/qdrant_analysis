@@ -3,9 +3,9 @@ replication_factor: 1
 write_consistency: 1
 read_consistency: 1
 failure_mode: kill
-failure_target_node: 0
+failure_target_node: 1
 fault_injection_delay_s: 30
-fault_duration_s: 30
+fault_duration_s: 60
 query_rate_qps: 50
 top_k: 10
 recall_interval_s: 0.3
