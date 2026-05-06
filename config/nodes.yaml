@@ -1,22 +1,22 @@
 nodes:
   - id: 0
-    host: 130.127.133.5
+    host: 128.105.146.7
     http_port: 6333
     grpc_port: 6334
     p2p_port: 6335
-    ssh_user: mmehta28
+    ssh_user: dk
   - id: 1
-    host: NODE1_IP         # fill in from CloudLab experiment page
+    host: 128.105.145.249
     http_port: 6333
     grpc_port: 6334
     p2p_port: 6335
-    ssh_user: mmehta28
+    ssh_user: dk
   - id: 2
-    host: NODE2_IP         # fill in from CloudLab experiment page
+    host: 128.105.145.234
     http_port: 6333
     grpc_port: 6334
     p2p_port: 6335
-    ssh_user: mmehta28
+    ssh_user: dk
 
 collection:
   name: sift128
